@@ -1,0 +1,92 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.site-header {
+  padding-block: $gap;
+  background: $color-header;
+  border-bottom: 1px solid $color-line;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    gap: $gap;
+  }
+
+  &__span {
+    color: $color-accent;
+  }
+
+  &__logo {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__border {
+    color: $color-text;
+    font-size: 18px;
+    transition: 0.5s ease;
+    border-bottom: 2px solid $color-accent;
+    align-self: flex-start;
+  }
+
+  &__link {
+    color: $color-muted;
+    font-size: 18px;
+    transition: 0.5s ease;
+    transform: translateY(0);
+    display: inline-block;
+     align-self: flex-start; 
+  }
+
+  &__link:hover {
+    border-bottom: 2px solid $color-accent;
+    color: $color-text;
+    transform: translateY(-2px);
+  }
+
+}
+
+.site-footer {
+  margin-top: $gap;
+  padding-block: $gap;
+  color: $color-muted;
+  border-top: 1px solid $color-line;
+
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__h {
+    color: $color-text;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  &__span {
+    color: $color-accent;
+  }
+
+  &__p1 {
+    margin-top: 30px;
+  }
+
+  &__gup {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

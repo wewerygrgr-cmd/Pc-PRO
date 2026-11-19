@@ -1,0 +1,45 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.15rem;
+
+    &__con {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__h {
+        margin-bottom: 40px;
+    }
+
+    &__h2 {
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        color: $color-muted;
+        gap: 8px;
+    }
+
+    &__p2 {
+        margin-top: 15px;
+        color: $color-muted;
+    }
+
+    &__tab {
+        background-color: $color-surface;
+        border: 1px solid $color-line;
+        border-radius: 12px;
+        padding: 24px;
+        display: grid;
+    }
+
+    &__span {
+        color: $color-accent;
+    }
+}

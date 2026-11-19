@@ -1,0 +1,64 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.work-grid {
+    display: grid;
+    gap: $gap;
+    grid-template-columns: 1fr;
+
+    @include mq("md") {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq("lg") {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.work-card {
+    overflow: hidden;
+    border-radius: $radius;
+    background: $color-surface;
+    transition: transform .25s ease;
+    box-shadow: 0 0 0 1px #b6ff00, 0 0 18px rgba(182, 255, 0, .45);
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    &__media {
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+    }
+
+    &__image {
+        @include cover;
+    }
+
+    &__body {
+        padding: $gap;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+    }
+
+    &__text {
+        color: $color-muted;
+        margin-top: 8px;
+    }
+
+    &__p {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        color: $color-muted;
+    }
+
+    &__p2 {
+        color: $color-accent;
+    }
+
+    &__link{
+        margin-bottom: 18px;
+    }
+}

@@ -1,0 +1,331 @@
+@use "variables" as *;
+
+.page-title {
+  margin-block: $gap;
+  font-size: 50px;
+  color: $color-text;
+}
+
+@media (min-width: 1024px) and (max-width:1279.98px) {
+  .about-us__p2 {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .main-container__link_left {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+
+  .main-container__link_right {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+
+  .main-container__p1 {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .main-container__h {
+    font-size: 34px;
+    margin-bottom: 14px;
+  }
+
+  .main-container__imgs {
+    max-width: 42%;
+  }
+
+  .buy-us__h2 {
+    font-size: 18px;
+  }
+
+  .buy-us__p1 {
+    font-size: 12px;
+  }
+
+  .buy-us__h {
+    font-size: 34px
+  }
+
+  .assembly__p {
+    font-size: 12px;
+  }
+
+  .assembly__h2 {
+    font-size: 16px;
+  }
+
+  .assembly__p2 {
+    font-size: 12px;
+  }
+
+  .about__h {
+    font-size: 24px;
+  }
+
+  .about__p {
+    font-size: 16px;
+  }
+
+  .about__btn {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+  .about {
+    padding: 18px;
+    flex-wrap: nowrap;
+  }
+
+  .about__text {
+    max-width: 75%;
+  }
+
+  .assembly__cont__tab {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-us__con {
+    align-items: center;
+  }
+
+  .info__p {
+    font-size: 16px;
+  }
+
+  .info__p2 {
+    font-size: 16px;
+  }
+
+  .info__h2 {
+    font-family: 10px;
+    line-height: 1.2;
+  }
+
+  .info__cost {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 767.98px;
+  }
+
+  .main-container__imgs {
+    background: radial-gradient(circle, rgba(182, 255, 0, .35), rgba(25, 209, 122, .12) 55%, transparent 60%);
+  }
+
+  .main-container__h {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .main-container__p1 {
+    font-size: 12px;
+    text-align: inherit;
+  }
+
+  .main-container__buttons {
+    margin-top: 15px;
+  }
+
+  .main-container__link_left {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  .main-container__link_right {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  .buy-us__h {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .buy-us__buy {
+    flex-wrap: wrap;
+  }
+
+  .buy-us__con_text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid #b6ff00;
+    padding-top: 15px;
+    max-width: 500px;
+
+  }
+
+  .buy-us__con_text2 {
+    margin: 60px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid #b6ff00;
+    padding-top: 15px;
+    max-width: 500px;
+  }
+
+  .assembly__h {
+    text-align: center;
+    font-size: 24px;
+  }
+
+
+  .assembly__cont__tab {
+    display: grid
+  }
+
+  .assembly__tab3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
+  }
+
+  .assembly__tab2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  .assembly__tab {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  .assembly__h2 {
+    font-size: 20px;
+  }
+
+  .about__h {
+    font-size: 24px;
+  }
+
+  .about__p {
+    font-size: 16px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about__text {
+    text-align: center;
+  }
+
+  .work-card__p {
+    font-size: 22px;
+  }
+
+  .container-card {
+    text-align: center;
+  }
+
+  .about-us__con {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work-card__p {
+    text-align: center;
+    display: flex;
+  }
+
+  .about-us__text {
+    max-width: 90%;
+  }
+
+  .about-us__p2 {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .about-us__h {
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .info__con {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .info__img_con{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .info__text{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .info__img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .info__cost{
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// добавил 2 архива: burger.zip - его надо интегрировать в другой архив с сайтом,
+// если будешь добавлять адаптив для бургера,
+// делай его в _pages.scss

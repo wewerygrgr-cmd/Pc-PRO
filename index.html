@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PcPRO</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <!-- ЛОГОТИП — ссылка на главную. -->
+      <a href="index.html" class="site-header__logo">Pc<span class="site-header__span">PRO</span></a>
+      <!-- Бургер -->
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+        <!-- Три полоски бургера. Стилизуются через CSS,
+           при открытии анимируются в «крестик» -->
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <!-- НАВИГАЦИЯ. -->
+      <nav class="site-header__nav" id="site-nav">
+        <a class="site-header__border" href="index.html">Главная</a>
+        <a class="site-header__link" href="catalog.html">Каталог</a>
+        <a class="site-header__link" href="about_us.html">О нас</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+
+    <section class="main-container">
+      <div class="main-container__content">
+        <div class="main-container__text">
+          <h1 class="main-container__h">Соберём компьютер <br>под вашу задачу</span></h1>
+          <p class="main-container__p1">PcPRO больше 5 лет собирает и продаёт ПК для игр, работы и<br> творчества.
+            Честные
+            комплектующие, прозрачная цена и <br> гарантия на каждую сборку.</p>
+        </div>
+        <div class="main-container__imgs">
+          <img class="main-container__img" src="src/img/pcmain.png" alt="">
+        </div>
+      </div>
+      <div class="main-container__buttons">
+        <a class="main-container__link_left" href="catalog.html">Смотреть каталог</a>
+        <a class="main-container__link_right" href="about_us.html">Заказать сборку</a>
+      </div>
+    </section>
+
+    <section class="tab">
+      <p class="tab__p1"><span class="tab__span">5+ лет </span> на рынке</p>
+      <p class="tab__p1"><span class="tab__span">36 мес. </span> гарантии</p>
+      <p class="tab__p1"><span class="tab__span"> 72 часа </span> стресс-тест каждого ПК </p>
+    </section>
+
+    <section class="buy-us">
+      <h1 class="buy-us__h">Почему покупают у нас</h1>
+      <div class="buy-us__buy">
+        <div class="buy-us__con_text">
+          <h1 class="buy-us__h2">Без переплат</h1>
+          <p class="buy-us__p1">Берём то, что даёт максимум производительности за ваш бюджет, а не то, что дороже.</p>
+        </div>
+        <div class="buy-us__con_text2">
+          <h1 class="buy-us__h2">Проверенные детали</h1>
+          <p class="buy-us__p1">Комплектующие от официальных поставщиков. Никаких «сюрпризов» через месяц.</p>
+        </div>
+        <div class="buy-us__con_text">
+          <h1 class="buy-us__h2">Под любую задачу</h1>
+          <p class="buy-us__p1">От бюджетного игрового ПК до рабочей станции для монтажа и 3D.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="assembly">
+      <h1 class="assembly__h">Как мы собираем</h1>
+      <div class="assembly__cont__tab">
+        <div class="assembly__tab">
+          <p class="assembly__p"> 1</p>
+          <h1 class="assembly__h2">Подбор</h1>
+          <p class="assembly__p2">Обсуждаем задачи и бюджет, предлагаем конфигурацию.</p>
+        </div>
+        <div class="assembly__tab2">
+          <p class="assembly__p"> 2</p>
+          <h1 class="assembly__h2">Сборка</h1>
+          <p class="assembly__p2">Аккуратный монтаж и прокладка кабелей, настройка BIOS.</p>
+        </div>
+        <div class="assembly__tab3">
+          <p class="assembly__p">3</p>
+          <h1 class="assembly__h2">Тест</h1>
+          <p class="assembly__p2">72 часа под нагрузкой: температуры, стабильность, шум.</p>
+        </div>
+        <div class="assembly__tab">
+          <p class="assembly__p">4</p>
+          <h1 class="assembly__h2">Выдача</h1>
+          <p class="assembly__p2">Установка системы, гарантийный талон и доставка.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__text">
+        <h1 class="about__h">Не знаете, что выбрать?</h1>
+        <p class="about__p">Расскажите, для чего нужен компьютер, — подберём сборку в вашем бюджете</p>
+      </div>
+      <a class="about__btn" href="about_us.html">Связатся с нами</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-container__text">
+          <h1 class="footer-container__h">Pc<span class="footer-container__span">PRO</span></h1>
+          <p class="footer-contauner__p1">Сборка и прадажа компьютеров</p>
+        </div>
+        <div class="footer-container__imgs">
+        </div>
+        <div class="footer-container__gup">
+          <p class="footer-container__p1">+7 900 954 57 13 <br> pcproexample@gmail.com <br> 24/7, 10:00-20:00</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
